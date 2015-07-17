@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DetectFloorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cs-1e-ipq">
+                                <rect key="frame" x="16" y="44" width="514" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoM-6v-Zc2">
+                                <rect key="frame" x="16" y="108" width="509" height="410"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7cs-1e-ipq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="5xK-UL-GSh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NoM-6v-Zc2" secondAttribute="bottom" constant="82" id="7RQ-f2-1Mm"/>
+                            <constraint firstItem="7cs-1e-ipq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Bup-sg-1DF"/>
+                            <constraint firstItem="NoM-6v-Zc2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="F4m-Us-nlQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7cs-1e-ipq" secondAttribute="trailing" constant="54" id="Ihf-GA-cJI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7cs-1e-ipq" secondAttribute="bottom" constant="507" id="eEF-ZB-eLP"/>
+                            <constraint firstItem="NoM-6v-Zc2" firstAttribute="top" secondItem="7cs-1e-ipq" secondAttribute="bottom" constant="15" id="gpo-mO-qk1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NoM-6v-Zc2" secondAttribute="trailing" constant="59" id="iMM-w2-dIx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="7cs-1e-ipq" id="Csd-8Z-n1t"/>
+                        <outlet property="txtView" destination="NoM-6v-Zc2" id="0at-eI-W0V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
